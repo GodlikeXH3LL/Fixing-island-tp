@@ -370,7 +370,7 @@ folder8:AddButton("Unlock All Islands", function()
     }
     for _, cframe in ipairs(positions) do
         player.Character.HumanoidRootPart.CFrame = cframe
-        wait(0.1)
+        wait(0.7)
     end
 end)
 
