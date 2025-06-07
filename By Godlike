@@ -1,0 +1,41 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/iblameaabis/Ililililililililililililil/refs/heads/main/W%20UI", true))()
+
+local window = library:AddWindow("Enchanted Hub | Ninja", {
+    main_color = Color3.fromRGB(1, 2, 3),
+    min_size = Vector2.new(655, 650),
+    can_resize = false,
+})
+local Main = window:AddTab("Main")
+local folder1 = Main:AddFolder("Time Of Day")
+
+folder1:AddSwitch("Loop Training Zones", function(Value)
+  LTS = Value
+  if LTS then
+    local function MMW()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(322.912567, 8830.49023, 87.7899475, -0.44533211, -1.57474229e-08, 0.895365477, 5.90717919e-09, 1, 2.05257855e-08, -0.895365477, 1.4429876e-08, -0.44533211)
+    end
+
+    local function LP()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(113.318001, 12958.5, 293.145996, 0.778010249, -8.46390602e-09, -0.628251612, -6.35732467e-10, 1, -1.42594345e-08, 0.628251612, 1.14933858e-08, 0.778010249)
+    end
+
+    local function T()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(318.627594, 16872.0977, -8.53180027, -0.756375313, 6.09071265e-08, 0.654137909, 9.49819512e-09, 1, -8.21278263e-08, -0.654137909, -5.59063302e-08, -0.756375313)
+    end
+
+    local function ET()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(330.810181, 30383.0996, -16.7225971, -0.478063285, -6.45304565e-09, 0.878325403, 4.87447593e-08, 1, 3.38782478e-08, -0.878325403, 5.90097073e-08, -0.478063285)
+    end
+
+    while LTS do
+      MMW()
+      wait(5)
+      LP()
+      wait(5)
+      T()
+      wait(5)
+      ET()
+      wait(5)
+    end
+  end
+end)
